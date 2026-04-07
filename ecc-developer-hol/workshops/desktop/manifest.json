@@ -14,7 +14,7 @@
     {
       "title": "Get started",
       "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
-      "filename": "https://oracle-livelabs.github.io/common//labs/remote-desktop/using-novnc-remote-desktop.md"
+      "filename": "https://livelabs.oracle.com/cdn/common//labs/remote-desktop/using-novnc-remote-desktop.md"
     }, 
     {
       "title": "Prepare and Set up",
@@ -59,7 +59,7 @@
     {
       "title": "Need help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
-      "filename": "https://oracle-livelabs.github.io/common//labs/need-help/need-help-livelabs.md"
+      "filename": "https://livelabs.oracle.com/cdn/common//labs/need-help/need-help-livelabs.md"
     }
   ]
 }
