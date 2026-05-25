@@ -142,7 +142,7 @@ Password: welcome1
     ![Activity audit](../images/activityaudit2.png "Activity audit")
 
 5. The Activity Tracker dashboard is displayed. This validates the integration of EBS and ECC
-    ![Activity audit](../images/activityaudit3.png "Activity audit")
+    ![Activity audit](../images/lab1_task_2_image_5.png "Activity audit")
 
 ## Task 3: Hands on demo of ECC Fixed Assets
 

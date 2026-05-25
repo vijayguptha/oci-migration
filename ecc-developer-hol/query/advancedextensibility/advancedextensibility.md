@@ -11,12 +11,19 @@ Estimated Time: 45 minutes
 
 ### Objectives
 In this lab, you will:
-* Create a new Dataset
-* Create metadata attributes for the dataset
+* Create a new data set
+* Create metadata attributes for the data set
 * Update metadata attributes and create attribute groups
-* Assign dataset to the application
-* Execute data load for the new dataset
-* Extend the existing dashboard with required components
+* Assign data set to the application
+* Execute data load for the new data set
+* Create data set view
+* Extend the existing dashboard using:
+    - Update existing component
+    - "Above the Fold" page layout
+    - Copy component
+    - Tab Layout
+    - Chart
+    - Results Table
 * EBS OA personalization
 
 
@@ -274,13 +281,66 @@ FROM ecc_proc_local_agreements</copy>
 
 ## Task 4:	Extend existing dashboard
 
+**Goal**: Business users need a reference layer that displays overall agreement metrics and trends independently of dashboard filters. This helps users maintain business context while analyzing filtered transactional data.
+
+### Task 4.1: Create a data set View
+
+**Goal**: As an admin user, I want to create a view from the newly created data set (`xx-po-pcc-local-agreements`) so that I can use this view as an additional control and abstraction compared to the original data set.
+
+A **Data Set View** is a logical representation of a base ECC data set that enables multiple business perspectives without duplicating extraction or loading processes. The view inherits the parent data set metadata definitions, load logic, and can inherit or override security handlers. A view does not automatically inherit associations, ensuring consistency and reducing maintenance overhead.
+
+Data Set Views allow administrators to:
+
+- Modify the list of attributes
+- Create a new security handler or use the same security
+- Create an abstraction layer from the data set (if associations are not established)
+- Provide a dedicated source for visualization components
+- Provide an isolation layer that does not honor data set filters by default
+- Separate reference analytics from transactional drill-down analysis
+
+1. Go to the "Data Sets and Views" menu under the "Data Designer" section.
+2. Click on the "New View" button, then select "Data Set View".
+
+![image-2026-5-20_15-19-54](../images/image-2026-5-20_15-19-54.png)
+
+3. Provide the details below:
+
+- Select Data Set: XX PCC Local Agreements
+- Data Set View Key: xx-po-pcc-local-agreements-view
+- View Display Name: XX PCC Local Agreements View
+- Icon: Procurement
+
+Note: The security is inherited from the parent data set and can be changed, but this task does not require changing it.
+
+4. Click on the "Save" button.
+
+![image-2026-5-20_15-21-23](../images/image-2026-5-20_15-21-23.png)
+
+### Task 4.2: Assign the Data Set View to the Application
+
+1. Go to the ECC Developer home page.
+2. Search for the "Procurement" application.
+3. Click on the edit icon for the application.
+
+![image-2026-5-20_15-25-57](../images/image-2026-5-20_15-25-57.png)
+
+4. Assign the data set view "XX PCC Local Agreements View" to the application.
+5. Click on the "Save" button.
+
+![image-2026-5-20_15-27-8](../images/image-2026-5-20_15-27-8.png)
+
+### Task 4.3: Extend Agreements Dashboard
+
 1. Navigate to ECC Developer home page
+
 2. Search for “Procurement” application
+
 3. Click on “Copy” option for “Agreements” dashboard
         ![Copy Page](../images/a116.png "Copy Page") 
 
-4.	A new copied page is created as “Agreements(1)”
-5.	For the copied page, change the details as mentioned below:
+4. A new copied page is created as “Agreements(1)”
+
+5. For the copied page, change the details as mentioned below:
     * Page Short Name: 
                  ```
   	    <copy>xx-pcc-local-agreements</copy>
@@ -291,8 +351,10 @@ FROM ecc_proc_local_agreements</copy>
             ```
     * Click on the “Save” button
         ![Edit Page](../images/a117.png "Edit Page") 
+
 6. Search for "Procurement" application and open "XX Local Agreements dashboard"
-6.	In “XX Local Agreements” dashboard, replace the dataset from “PCC Agreements” to “XX PCC Local Agreements” in the configuration for
+
+7. In “XX Local Agreements” dashboard, replace the dataset from “PCC Agreements” to “XX PCC Local Agreements” in the configuration for
     * Search
     * Available Refinements
     * Selected Refinements
@@ -300,15 +362,15 @@ FROM ecc_proc_local_agreements</copy>
     * Charts
         ![Edit Configuration](../images/a118.png "Edit Configuration") 
 
-8.	In “XX Local Agreements” dashboard, remove the entire tab layout component which contains the result tables
+8. In “XX Local Agreements” dashboard, remove the entire tab layout component which contains the result tables
         ![Remove Tab Layout](../images/a119.png "Remove Tab Layout") 
 
-9.	Create a new tab layout with an empty title and configure 2 tabs:
+9. Create a new tab layout with an empty title and configure 2 tabs:
     * Agreements
     * Releases
         ![Create Tab Layout](../images/a1110.png "Create Tab Layout") 
 
-10.	Under “Agreement” tab, add a “Result Table” component and configure as mentioned below:
+10. Under “Agreement” tab, add a “Result Table” component and configure as mentioned below:
     * Title: (leave this empty)
     * Dataset: 
                          ```
@@ -329,10 +391,10 @@ FROM ecc_proc_local_agreements</copy>
         * Agr Amount Limit
         * Agr Supplier Contact
 
-11.	Click on the “Save” button to save the configuration
+11. Click on the “Save” button to save the configuration
         ![Add Agreement Table](../images/a1111.png "Add Agreement Table") 
 
-11.	Under “Releases” tab, add a “Result Table” component and configure as mentioned below:
+12. Under “Releases” tab, add a “Result Table” component and configure as mentioned below:
     * Title: (leave this empty)
     * Dataset: 
                              ```
@@ -351,12 +413,101 @@ FROM ecc_proc_local_agreements</copy>
         * Add below group (under Interchangeable Attributes section):
             * Releases
 
-12. You will see the below image:
+13. You will see the below image:
         ![Add Releases Table](../images/a1112.png "Add Releases Table")
 
-13.	We have successfully created the dashboard for local agreements.
+14. We have successfully created the dashboard for local agreements.
         ![Local Agreements Dashboard](../images/a1113.png "Local Agreements Dashboard")
 
+
+15. Add the static business reference components in the Above the Fold layout.
+
+**Above the Fold Layout** is a dashboard design pattern that separates primary transactional analysis from supporting business insights using a 70-30 split layout. It enables users to interact with detailed data while continuously viewing high-level KPIs and reference analytics.
+
+16. Click "Add Component".
+
+17. Enable "Above the Fold" layout.
+
+![image-2026-5-20_15-53-8](../images/image-2026-5-20_15-53-8.png)
+
+18. Once enabled, the dashboard is divided into:
+
+    - **70% section**: primary working area (tables, transactional analysis)
+    - **30% section**: supporting insights and reference analytics (collapsible)
+
+![image-2026-5-20_15-55-27](../images/image-2026-5-20_15-55-27.png)
+
+Now, the Above-the-Fold layout will be used to display static agreement KPIs and a reference chart alongside interactive agreement and release data, allowing business users to maintain overall business context during filtered analysis.
+
+Instead of creating new visualizations from scratch, use the **Copy Component** capability to duplicate existing summary items and chart, then reconfigure them to use the **XX PCC Local Agreements View**.
+
+   - In ECC, copying a component is typically used to:
+    - Reuse an existing visualization configuration
+    - Create similar charts or summary bars quickly
+    - Modify the copied component independently
+    - Accelerate dashboard personalization and extension
+    
+19\. Add a new summarization bar from the "Add Components" list and drop it on the Above the Fold layout.
+
+![image-2026-5-20_16-12-34](../images/image-2026-5-20_16-12-34.png)
+
+20. Open summary bar configuration, expand the copy component list, and search for the summary bar component you want to use.
+
+    Note: You can get the component ID from the summary bar configuration.
+
+    - Component ID: `nijkq8e8r1`
+
+21. Click "Apply".
+
+![image-2026-5-20_16-20-30](../images/image-2026-5-20_16-20-30.png)
+
+22. Click "Preview".
+
+![image-2026-5-20_16-21-50](../images/image-2026-5-20_16-21-50.png)
+
+23. Delete:
+
+    - Currencies (flag)
+    - Functional Currency (dimension)
+
+24. Replace the data set from "XX PCC Local Agreements" to "XX PCC Local Agreements View" in the configuration for:
+
+    - Agreements to Watch (metric)
+    - Expiring Agreements (metric)
+
+![image-2026-5-20_16-24-59](../images/image-2026-5-20_16-24-59.png)
+
+25. Click "Save".
+
+26. Add a new chart from the "Add Components" list.
+
+![image-2026-5-20_16-26-5](../images/image-2026-5-20_16-26-5.png)
+
+27. Configure the chart as follows:
+
+    - Data Set: XX PCC Local Agreements View
+    - Chart Type: Donut
+    - Dimension: Group Status
+    - Metric: Agreement (Count Distinct)
+    - Sort Options: Dimension - Ascending
+
+28. Click "Save".
+
+![image-2026-5-20_16-30-2](../images/image-2026-5-20_16-30-2.png)
+
+29. Delete the two metrics from the main summarization bar.
+
+    -  Open configuration and delete:
+        - Agreements to Watch (metric)
+        - Expiring Agreements (metric)
+
+30. Click "Save".
+
+31. You have successfully created the dashboard for local agreements.
+
+32. Filter the dashboard by substatus "Incomplete" from the chart. You will notice that the filter applies to the main dashboard, but does not apply to the components in the Above the Fold layout.
+
+![image-2026-5-20_16-33-45](../images/image-2026-5-20_16-33-45.png)
 ## Task 5:	Create data load package
 
 **Data Load Process:**
@@ -813,4 +964,3 @@ You may now **proceed to the next lab**
 * **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Sriram Sumaithangi
 
 * **Last Updated By/Date**- Sriram Sumaithangi, April 2025
-
