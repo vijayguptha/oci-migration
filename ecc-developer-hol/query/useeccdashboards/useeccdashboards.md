@@ -142,7 +142,7 @@ Password: welcome1
     ![Activity audit](../images/activityaudit2.png "Activity audit")
 
 5. The Activity Tracker dashboard is displayed. This validates the integration of EBS and ECC
-    ![Activity audit](../images/activityaudit3.png "Activity audit")
+    ![Activity audit](../images/lab1_task_2_image_5.png "Activity audit")
 
 ## Task 3: Hands on demo of ECC Fixed Assets
 
@@ -207,7 +207,7 @@ Password: welcome1
 11. As you can see we are navigated to the Order details page, with "Order" and "Operating Unit" already applied in Selected refinements. ECC allows you to configure what attributes you want to refine for, when you are navigating to the row action dashboard, in this case it is "Order" and "Operating Unit".
     ![Procurement Command Center](../images/pro6.png "Procurement Command Center")
 12. From the selected refinements, you can click on the 
-"Order" value refinement to either replace the "Order" or click on the attribute name "Order" to replace/add more orders to refine the page.
+    "Order" value refinement to either replace the "Order" or click on the attribute name "Order" to replace/add more orders to refine the page.
     ![Procurement Command Center](../images/pro7.png "Procurement Command Center")
 
 13. Click on the side navigation panel on the top left to open the "Available refinements" section and from "Schedules Summary" Attribute group click on "Ship-To location" attribute [Attribute group is a grouped list of attributes with each group representing a functional or logical grouping for a set of attributes] and select "M-1 Seattle Mfg" value as this is the specific order line we want to investigate.
@@ -248,7 +248,7 @@ Password: welcome1
     ![Track and trace](../images/ju5.png "Track and trace")
 
 8. Investigate relevant tasks, hold control key and select the relevant picks and then click on "Compare"
-["Compare" feature allows a user to compare multiple nodes in one go].
+    ["Compare" feature allows a user to compare multiple nodes in one go].
     ![Track and trace](../images/ju6.png "Track and trace")
 9. We find they have different lot numbers, different sub inventory, different locator and different item. Let's investigate Pack transactions now
     ![Track and trace](../images/ju7.png "Track and trace")

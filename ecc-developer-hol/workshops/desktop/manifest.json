@@ -53,6 +53,10 @@
       "filename": "../../query/diagnoseandmonitor/diagnoseandmonitor.md"
     },
     {
+      "title": "Lab 9: Additional End-to-End Extensibility Scenario",
+      "filename": "../../query/endtoendextensibility/endtoendextensibility.md"
+    },
+    {
       "title": "Troubleshooting",
       "filename": "../../query/Troubleshooting/start-stop-ecc.md"
     },

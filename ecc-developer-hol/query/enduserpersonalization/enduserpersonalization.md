@@ -52,10 +52,10 @@ style="white-space:pre-wrap; word-wrap:break-word"
   <tr>
     <td>End User Personalization</td>
     <td> 
-    1.  Runtime options: Summarization Bar<br/>
-    2.  Runtime options: Results Table<br/>
-    3.  Runtime options: Aggregate Table<br/>
-    4.  Runtime options: Chart<br/>
+    1. Runtime options: Summarization Bar<br/>
+    2. Runtime options: Results Table<br/>
+    3. Runtime options: Aggregate Table<br/>
+    4. Runtime options: Chart<br/>
      
    
   </tr>
@@ -106,7 +106,7 @@ Password: welcome1
 
 3. You will be navigated to the "Outstanding receivables" dashboard. Select "Vision Operations (USA)" Ledger from the Ledger Filter Chip.
 
-**Note:** If the dashboard is already personalized, you need  to reset personalization by clicking on the reset button on the top left 
+    **Note:** If the dashboard is already personalized, you need  to reset personalization by clicking on the reset button on the top left 
     ![Receivables](../images/reset100.png "Receivables")
     ![Receivables](../images/r001.png "Receivables")
     ![Receivables](../images/r2.png "Receivables")
@@ -158,24 +158,24 @@ Password: welcome1
         ![EBS home screen](../images/genz100.png "EBS home screen")
 
 3. You will see the "Account Analysis" dashboard. If you see any existing filters in the Selected refinements, please remove them and refine the dashboard for "Period Name" attribute with value as "Jun-23" from Available refinements (Click on the side navigation panel to open Available refinements). 
-        ![Personalize dashboard](../images/changefiltersinglusecase.png "Personalize dashboard")
+        ![Personalize dashboard](../images/lab2_task_2_image_3.png "Personalize dashboard")
 
 4. Within the "Account Analysis" dashboard you can see the Trellis chart under the Period Activities tab. We will explore "Expenses" by clicking on "expenses" from the legend in the chart.
-        ![Personalize dashboard](../images/fg1.png "Personalize dashboard")
+        ![Personalize dashboard](../images/lab2_task_2_image_4.png "Personalize dashboard")
 
 5. Let's explore "Employee Expenses" category
-        ![Personalize dashboard](../images/fg2.png "Personalize dashboard")
-        ![Personalize dashboard](../images/fg30.png "Personalize dashboard")
+        ![Personalize dashboard](../images/lab2_task_2_image_5_1.png "Personalize dashboard")
+        ![Personalize dashboard](../images/lab2_task_2_image_5_2.png "Personalize dashboard")
 6. The highest employee expense account, is "Meals", which is rather odd. Let's explore it further by clicking on "Meals" from the legend in the chart.
-        ![Personalize dashboard](../images/fg4.png "Personalize dashboard")
+        ![Personalize dashboard](../images/lab2_task_2_image_6_1.png "Personalize dashboard")
 
 7. To investigate further why "Meals" seems unusally high, let's compare current period amount with previous period. Click on the "Period Name" breadcrumb to add previous period i.e., May-23
-        ![Personalize dashboard](../images/fg5.png "Personalize dashboard")
-        ![Personalize dashboard](../images/fg6.png "Personalize dashboard")
+        ![Personalize dashboard](../images/lab2_task_2_image_7_1.png "Personalize dashboard")
+        ![Personalize dashboard](../images/lab2_task_2_image_7_2.png "Personalize dashboard")
 
 8. Previous period seems very low compared to what we were investigating, let's compare current period amount with same period last year to check for seasonality i.e., compare Jun-23 with Jun-22. To do that, click on the "Period Name" breadcrumb to add Jun-22
-        ![Personalize dashboard](../images/fg7.png "Personalize dashboard")
-        ![Personalize dashboard](../images/fg8.png "Personalize dashboard")
+        ![Personalize dashboard](../images/lab2_task_2_image_8_1.png "Personalize dashboard")
+        ![Personalize dashboard](../images/lab2_task_2_image_8_2.png "Personalize dashboard")
 
 9. The amount for "meals" is even higher in the previous year. 
 11. Let's explore further and analyze employee expenses by department. Click on the runtime options for "Period Activities by Chart of Accounts" Pivot view and select only the following, and then click outside the runtime options of Pivot component for changes to reflect.
@@ -210,7 +210,7 @@ Password: welcome1
 * The list of saved searches appears when the focus is on the search component. Saved searches are searchable by their titles, filter attributes, and filter values. Three types of saved searches are available for users: seeded, public, and private. 
 * Seeded saved searches are published along with the product. Administrators can create public saved searches. Users can create their own private saved searches. 
 * Private saved searches are accessible only by the users who created them whereas public saved searches are accessible by all the dashboard users. 
-        ![Personalize dashboard](../images/fg15.png "Personalize dashboard")
+        ![Personalize dashboard](../images/lab2_task_2_image_17_1.png "Personalize dashboard")
 
 
 

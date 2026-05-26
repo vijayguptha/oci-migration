@@ -37,7 +37,7 @@
         },
         {
           "title": "Lab 5: Extensibility: Advanced Flow",
-          "filename": "../../query/a11/a11.md"
+          "filename": "../../query/advancedextensibility/advancedextensibility.md"
         },
         {
           "title": "Lab 6: Manage Extensibility",
@@ -50,6 +50,10 @@
         {
           "title": "Lab 8: Diagnose and Monitor ECC",
           "filename": "../../query/diagnoseandmonitor/diagnoseandmonitor.md"
+        },
+        {
+          "title": "Lab 9: Additional End-to-End Extensibility Scenario",
+          "filename": "../../query/endtoendextensibility/endtoendextensibility.md"
         },
         {
           "title": "Troubleshooting",
