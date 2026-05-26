@@ -106,30 +106,30 @@ Password: welcome1
     ```
 
 2. Navigate to Payables Manager responsibility -> Payables Command Center -> Supplier Balance Dashboard
-   ![Payables Manager responsibility](../images/pl1.png "Payables Manager responsibility")
+    ![Payables Manager responsibility](../images/pl1.png "Payables Manager responsibility")
 
 4. From Supplier Balance dashboard, click on the Ledgers Filter Chip and select "Vision Operations (USA)" Ledger from the pop up.
 
-   ![Supplier Balance dashboard](../images/sup1.png "Supplier Balance dashboard")
+    ![Supplier Balance dashboard](../images/sup1.png "Supplier Balance dashboard")
 
 
 5. Enable Personalization Mode by clicking on the "i" icon (on the top left of the page, beside the share icon) and then click on "Personalize" button.
 
-   ![Enable Personalization Mode](../images/lab3_task_2_image_4_1.png "Enable Personalization Mode")  
-   ![Enable Personalization Mode](../images/lab3_task_2_image_4_2.png "Enable Personalization Mode")
+    ![Enable Personalization Mode](../images/lab3_task_2_image_4_1.png "Enable Personalization Mode")  
+    ![Enable Personalization Mode](../images/lab3_task_2_image_4_2.png "Enable Personalization Mode")
 
 6. The "Personalize" button is now disabled when the dashboard is in edit mode. All components in the dashboard will now have the configuration and delete icon
 
-   ![Enable Personalization Mode](../images/lab3_task_2_image_5_1.png "Enable Personalization Mode")
+    ![Enable Personalization Mode](../images/lab3_task_2_image_5_1.png "Enable Personalization Mode")
 
 
 7. Add a new Tab in the existing Tab component. To do this you need to click on the configuration icon for the existing Tab component and then add a new Tab in it. Name this tab "Bank Balance"
 
-   ![Configure Tab layout](../images/sup9.png "Configure Tab layout")
+    ![Configure Tab layout](../images/sup9.png "Configure Tab layout")
 
 8. Click "Preview" and then click "Save"
-   ![Add Bank Balance Tab](../images/addbankbalancetab.png "Add Bank Balance Tab")
-   ![Save Tab component](../images/sup10.png "Save Tab component")
+    ![Add Bank Balance Tab](../images/addbankbalancetab.png "Add Bank Balance Tab")
+    ![Save Tab component](../images/sup10.png "Save Tab component")
 
 9. Add a chart component inside the new tab "Bank Balance", by dragging and dropping the chart component within the tab layout, to highlight paid amount per bank account
 
@@ -144,8 +144,8 @@ Password: welcome1
 12. Add "Currency" as Trellis column dimension
 13. Click "Preview" and then click "Save"
 
-   ![Add Trellis column](../images/lab3_task_2_image_12_1.png "Add Trellis column")
-   ![Save trellis chart](../images/lab3_task_2_image_12_2.png "Save trellis chart")
+    ![Add Trellis column](../images/lab3_task_2_image_12_1.png "Add Trellis column")
+    ![Save trellis chart](../images/lab3_task_2_image_12_2.png "Save trellis chart")
 
 
 14. In addition of viewing detailed payments add a Pivot view under "Bank Balances" tab.
@@ -193,25 +193,25 @@ Password: welcome1
 
 2. You will see the below screen,  From **General Ledger Super User** responsibility navigate to **General Ledger Command Center**
 
-   ![EBS home screen](../images/genz100.png "EBS home screen")
+    ![EBS home screen](../images/genz100.png "EBS home screen")
 
 
 3. You will see the Account Analysis dashboard. If you see any existing filters in the Selected refinements, please remove them and then enable personalization from "i" icon 
-   ![Personalize dashboard](../images/lab3_task_3_image_3_1.png "Personalize dashboard")
+    ![Personalize dashboard](../images/lab3_task_3_image_3_1.png "Personalize dashboard")
 
 4. Click on the search bar to find the previously saved search [in Lab 2 - Task 2]
-   ![Personalize dashboard](../images/lab3_task_3_image_4_1.png "Personalize dashboard")
+    ![Personalize dashboard](../images/lab3_task_3_image_4_1.png "Personalize dashboard")
 
 5. Click on the saved search to start our investigation from there
-   ![Personalize dashboard](../images/lab3_task_3_image_5_1.png "Personalize dashboard")
+    ![Personalize dashboard](../images/lab3_task_3_image_5_1.png "Personalize dashboard")
 
 
 8. Add a new Tab in the existing Tab component, the one below the chart. To do this you need to click on the configuration icon for the existing Tab component and then add a new Tab in it. Add Tab Title as "Period Activities by Department and Parent Account". Click "Preview" and then click "Save".
-   ![Tab](../images/genz500.png "Tab")
+    ![Tab](../images/genz500.png "Tab")
  
 9. Add a new bar chart  inside this new tab
 
-   ![Tab](../images/genz600.png "Tab")
+    ![Tab](../images/genz600.png "Tab")
 
 10. Configure the chart with the below details:
 
@@ -224,7 +224,7 @@ Password: welcome1
 
 10. Click "Preview" 
 
-   ![Click Preview](../images/lab3_task_3_image_10_1.png "Click Preview")
+    ![Click Preview](../images/lab3_task_3_image_10_1.png "Click Preview")
 11. Save the configuration. You will be able to see a combined view of account segment and hierarchy
    ![combined view of account segment and hierarchy](../images/lab3_task_3_image_11_1.png "Combined view of account segment and hierarchy")
 

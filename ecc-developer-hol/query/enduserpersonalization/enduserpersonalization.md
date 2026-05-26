@@ -52,10 +52,10 @@ style="white-space:pre-wrap; word-wrap:break-word"
   <tr>
     <td>End User Personalization</td>
     <td> 
-    1.  Runtime options: Summarization Bar<br/>
-    2.  Runtime options: Results Table<br/>
-    3.  Runtime options: Aggregate Table<br/>
-    4.  Runtime options: Chart<br/>
+    1. Runtime options: Summarization Bar<br/>
+    2. Runtime options: Results Table<br/>
+    3. Runtime options: Aggregate Table<br/>
+    4. Runtime options: Chart<br/>
      
    
   </tr>
@@ -106,7 +106,7 @@ Password: welcome1
 
 3. You will be navigated to the "Outstanding receivables" dashboard. Select "Vision Operations (USA)" Ledger from the Ledger Filter Chip.
 
-**Note:** If the dashboard is already personalized, you need  to reset personalization by clicking on the reset button on the top left 
+    **Note:** If the dashboard is already personalized, you need  to reset personalization by clicking on the reset button on the top left 
     ![Receivables](../images/reset100.png "Receivables")
     ![Receivables](../images/r001.png "Receivables")
     ![Receivables](../images/r2.png "Receivables")
