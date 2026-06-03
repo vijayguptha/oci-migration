@@ -1,6 +1,6 @@
 # Extensibility: Advanced Flow
 
-### Introduction
+## Introduction
 
 
 This lab walks you through the steps to extend Procurement Command Center by adding a new dashboard for local agreements.
@@ -228,22 +228,27 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
 6. Execute data loads for this new dataset
     * Navigate to “Data Load Submission” menu under “Administration” section
     * Select the below details to submit “Query Upload”
-        * Application Name: ```
-  	        <copy>Procurement</copy>
+        * Application Name:
             ```
-        * Dataset: ```
-  	        <copy>XX PCC Local Agreements</copy>
+            <copy>Procurement</copy>
             ```
-        * Load Type: ```
-  	        <copy>Query Upload</copy>
+        * Dataset:
             ```
-        * Connection: ```
-  	        <copy>ebsdb</copy>
+            <copy>XX PCC Local Agreements</copy>
             ```
-        * SQL Query: ```
-  	         <copy>SELECT ecc_spec_id, agreement, agreement_number, agr_revision, status, supplier, supplier_site, agr_supplier_contact, agr_agreed_amount, agr_amount_limit, agr_amount_released, functional_currency_code, currency, buyer_name, effective_from, effective_to, creation_date, approval_date, submit_date, agr_payment_term, org_id, operating_unit, received_amount, invoiced_amount, shipped_amount, language, group_status, sub_status, next_action_type, reservation_status, creation_year, creation_month, agreements_to_watch, expiring_agreements, agr_style, amount_agreed_func, released_amount_func, authorization_status, document_type, utilization_percentage, doc_authorized_user_ids, security_level_code, type_lookup_code, supplier_id, agreement_line, line_number, line_type, item, item_description, category, uom, unit_price, line_status, lead_time, no_price_breaks, negotiation, order_num, released_quantity, shipped_quantity, received_quantity, rejected_quantity, invoiced_quantity, line_released_amount, line_received_amount, line_invoiced_amount, line_shipped_amount, agreement_status_code, supplier_item_num, cancel_flag, acceptance_required_flag, po_lineloc_id, release_number, po_shipment_num, po_ship_ordered_quantity, po_ship_to_location, shipment_amount, po_ship_received_quantity, po_ship_rejected_quantity, po_ship_invoiced_quantity, po_ship_cancelled_quantity, po_ship_shipped_quantity, po_ship_ordered_amount, po_ship_shipped_amount, po_ship_received_amount, po_ship_rejected_amount, po_ship_invoiced_amount, po_unit_price, po_need_by_date, po_promised_date, overdue_flag, need_by_date_open_shipment 
-FROM ecc_proc_local_agreements</copy>
-            ```         
+        * Load Type:
+            ```
+            <copy>Query Upload</copy>
+            ```
+        * Connection:
+            ```
+            <copy>ebsdb</copy>
+            ```
+        * SQL Query:
+            ```
+            <copy>SELECT ecc_spec_id, agreement, agreement_number, agr_revision, status, supplier, supplier_site, agr_supplier_contact, agr_agreed_amount, agr_amount_limit, agr_amount_released, functional_currency_code, currency, buyer_name, effective_from, effective_to, creation_date, approval_date, submit_date, agr_payment_term, org_id, operating_unit, received_amount, invoiced_amount, shipped_amount, language, group_status, sub_status, next_action_type, reservation_status, creation_year, creation_month, agreements_to_watch, expiring_agreements, agr_style, amount_agreed_func, released_amount_func, authorization_status, document_type, utilization_percentage, doc_authorized_user_ids, security_level_code, type_lookup_code, supplier_id, agreement_line, line_number, line_type, item, item_description, category, uom, unit_price, line_status, lead_time, no_price_breaks, negotiation, order_num, released_quantity, shipped_quantity, received_quantity, rejected_quantity, invoiced_quantity, line_released_amount, line_received_amount, line_invoiced_amount, line_shipped_amount, agreement_status_code, supplier_item_num, cancel_flag, acceptance_required_flag, po_lineloc_id, release_number, po_shipment_num, po_ship_ordered_quantity, po_ship_to_location, shipment_amount, po_ship_received_quantity, po_ship_rejected_quantity, po_ship_invoiced_quantity, po_ship_cancelled_quantity, po_ship_shipped_quantity, po_ship_ordered_amount, po_ship_shipped_amount, po_ship_received_amount, po_ship_rejected_amount, po_ship_invoiced_amount, po_unit_price, po_need_by_date, po_promised_date, overdue_flag, need_by_date_open_shipment
+            FROM ecc_proc_local_agreements</copy>
+            ```
         * Data Upload: Select “Dataset Reset”
         </br>
         **Note:** Data set reset would wipe away any prior data set with the same name and start fresh whereas an extend existing data set option would use the same existing data set and ingest data on top of it
