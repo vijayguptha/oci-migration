@@ -57,13 +57,13 @@ To create a data set within ECC, follow the below steps:
   	 Username: sysadmin
 Password: welcome1
     ```
-2.	Navigate to ECC Developer page -> ECC Developer
+2. Navigate to ECC Developer page -> ECC Developer
         ![Procurement Command Center](../images/val1.png "Procurement Command Center")
-3.	Go to “Datasets” menu under “Data Designer” section
+3. Go to “Datasets” menu under “Data Designer” section
         ![Procurement Command Center](../images/data1.png "Procurement Command Center")
-4.	Click on “New Dataset” button
+4. Click on “New Dataset” button
         ![Procurement Command Center](../images/data2.png "Procurement Command Center")
-5.	Provide the below details:
+5. Provide the below details:
     *	Dataset Key: 
                                                                 ```
   	    <copy>xx-po-pcc-local-agreements</copy>
@@ -254,7 +254,7 @@ FROM ecc_proc_local_agreements</copy>
         ![Request ID](../images/request_id_data_load.png "Request ID")
 
     * Upon clicking on the "Run ID" link displayed in the above image, user will be navigated to the  data load tracking page 
-6.	You can also manually navigate to the data load tracking page from menu under “Administration” section
+6. You can also manually navigate to the data load tracking page from menu under “Administration” section
     * Refine using the request ID which is generated when data load is submitted
     * Click on the “Filter” button
         ![Data Load Tracking](../images/a1114.png "Data Load Tracking")
@@ -283,7 +283,6 @@ FROM ecc_proc_local_agreements</copy>
 **Goal**: Business users need a reference layer that displays overall agreement metrics and trends independently of dashboard filters. This helps users maintain business context while analyzing filtered transactional data.
 
 ### Task 4.1: Create a data set View
-<!-- This is a dummy comment -->
 
 **Goal**: As an admin user, I want to create a view from the newly created data set (`xx-po-pcc-local-agreements`) so that I can use this view as an additional control and abstraction compared to the original data set.
 
@@ -305,10 +304,10 @@ Data Set Views allow administrators to:
 
 3. Provide the details below:
 
-- Select Data Set: XX PCC Local Agreements
-- Data Set View Key: xx-po-pcc-local-agreements-view
-- View Display Name: XX PCC Local Agreements View
-- Icon: Procurement
+    - Select Data Set: XX PCC Local Agreements
+    - Data Set View Key: xx-po-pcc-local-agreements-view
+    - View Display Name: XX PCC Local Agreements View
+    - Icon: Procurement
 
 Note: The security is inherited from the parent data set and can be changed, but this task does not require changing it.
 
@@ -851,7 +850,7 @@ There are two ways to provide access of Local Agreements dashboard to the users:
 1. Replace the shipped "Agreements" dashboard with the custom "Local Agreements" dashboard using EBS OA Personalization
 2. Create a new menu under Procurement Command Center to navigate to an OA Page where Local Agreements dashboard is displayed
 
-In this task, we will replace the shipped "Agreements" dashboard with the custom "Local Agreements" dashboard.
+    In this task, we will replace the shipped "Agreements" dashboard with the custom "Local Agreements" dashboard.
 
 1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
     ```
@@ -888,7 +887,7 @@ Password: welcome1
     * Click on the “Submit” button
         ![Create Function](../images/a11s3.png "Create Function") 
 
-3.	Add the new FND Function to Procurement Command Center Permission Set:
+3. Add the new FND Function to Procurement Command Center Permission Set:
     * Navigate to EBS Home Page -> Functional Administrator responsibility -> Security -> Permission Sets
         ![Permission Set](../images/permissionset.png "Permission Set")
     * Search with permission set name as 
@@ -919,23 +918,23 @@ Password: welcome1
   	 Username: operations
 Password: welcome1
     ```
-2.	Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center -> Procurement Operations
-          ![Procurement Operations](../images/arbac2.png "Procurement Operations")
+2. Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center -> Procurement Operations
+    ![Procurement Operations](../images/arbac2.png "Procurement Operations")
 
-3.	Within "Procurement Operations", navigate to "Agreements" dashboard
-          ![Agreements](../images/arbac3.png "Agreements")
+3. Within "Procurement Operations", navigate to "Agreements" dashboard
+    ![Agreements](../images/arbac3.png "Agreements")
 
-4.  Click on EBS Settings icon
-          ![EBS Settings](../images/arbac5.png "EBS Settings")
+4. Click on EBS Settings icon
+    ![EBS Settings](../images/arbac5.png "EBS Settings")
 
-5.	Click on “Personalize Page” option
-          ![Personalize Page](../images/arbac4.png "Personalize Page")
+5. Click on “Personalize Page” option
+    ![Personalize Page](../images/arbac4.png "Personalize Page")
 
 5. Personalize the Rich Container:
-          ![Personalize Rich Container](../images/arbac6.png "Personalize Rich Container")
+    ![Personalize Rich Container](../images/arbac6.png "Personalize Rich Container")
 
-5.	Update the below details and click on the “Apply” button
-     * Destination Function: 
+5. Update the below details and click on the “Apply” button
+    * Destination Function: 
                                                       ```
   	    <copy>XX_PO_PCC_ECC_LOCAL_AGREEMENTS</copy>
             ```
